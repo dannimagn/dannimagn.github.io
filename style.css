@@ -84,15 +84,34 @@ a {
 }
 
 .emailForm,
-.submitButton {
+.submitButton,
+.emailFormText {
+    display: flex;
     background-color: #939ab7;
     border-style: none;
     border: 1px solid #b7bdf8;
 }
 
+.emailFormText {
+    height: 200px;
+    width: 400px;
+}
+
 .submitButton {
     color: black;
+    height: 25px;
+    align-items: center;
+    padding: 10px
 }
+
+.submitButton:hover {
+    background: #9da5c4;
+}
+
+.submitButton:active {
+    background: #8aadf4;
+}
+
 
 
 .kvb, .alcoa, .rafal {
