@@ -1,3 +1,5 @@
+/* Responsive css here */
+
 * {
     box-sizing: border-box;
     font-family: monospace;
@@ -79,6 +81,17 @@ a {
     padding-top: 3%;
     padding-bottom: 45px;
     background-color: #1e2030;
+}
+
+.emailForm,
+.submitButton {
+    background-color: #939ab7;
+    border-style: none;
+    border: 1px solid #b7bdf8;
+}
+
+.submitButton {
+    color: black;
 }
 
 
@@ -181,3 +194,4 @@ h2 {
 }
 
 }
+

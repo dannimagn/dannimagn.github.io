@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Danni</title>
+</head>
+<body>
+    <div class="banner">
+        <a class="bannerAnchor" href="index.html">Daníel Magnús</a>
+    </div>
+
+        <div class="nav">
+            <a class="certs" href="certs.html">Certifications</a>
+            <a class="exp" href="experience.html">Experience</a>
+            <a class="contact" href="contact.html">Contact</a>
+        </div>
+
+    <div class="content">
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+
+    <!-- Replace with your Access Key -->
+    <input type="hidden" name="access_key" value="10a91b8d-d942-4815-ab04-08ac5dda6d77">
+
+    <!-- Form Inputs. Each input must have a name="" attribute -->
+     <h4>Name</h4>
+    <input type="text" name="name" class="emailForm" required>
+    <h4>Email</h4>
+    <input type="email" name="email" class="emailForm" required>
+    <h4>Subject:</h4>
+    <textarea name="message" required class="emailForm"></textarea>
+
+    <!-- Honeypot Spam Protection -->
+    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+    <!-- Custom Confirmation / Success Page -->
+    <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+    <br>
+    <br>
+    <button type="submit" class="submitButton">Submit Form</button>
+
+
+</form>
+    </div>
+</body>
+</html>
