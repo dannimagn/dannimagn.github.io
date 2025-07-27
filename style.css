@@ -73,7 +73,7 @@ a {
 
 .nav {
     display: flex;
-    flex: 0 0 0;
+    flex: 0 1 1;
     justify-content: flex-start;
     gap: 8%;
     font-size: medium;
@@ -111,7 +111,6 @@ a {
 .submitButton:active {
     background: #8aadf4;
 }
-
 
 
 .kvb, .alcoa, .rafal {

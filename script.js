@@ -4,7 +4,6 @@ const moreKVB = document.querySelector('.moreTextKVB')
 const rafal = document.querySelector('.showButtonRafal')
 const rafalBox = document.querySelector('.rafal')
 const moreRafal = document.querySelector('.moreTextRafal')
-const emailButton = document.querySelector('.submitButton')
 
 kvb.addEventListener('click', () => {
 
