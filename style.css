@@ -214,7 +214,7 @@ h2 {
 
 @media screen and (max-width: 767px){
 
-.bannerAnchor {
+.banner, .nav {
     justify-content: center;
 }
 
