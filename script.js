@@ -22,7 +22,7 @@ function showLess(place, box, more) {
 
 kvb.addEventListener('click', () => {
 
-    if (kvb.textContent === '+ show more') {
+    if (kvb.textContent === '+ show more'|| "+ mehr anzeigen" ) {
         showMore(kvb, kvbBox, moreKVB);
     }
 
