@@ -5,76 +5,58 @@ const rafal = document.querySelector('.showButtonRafal')
 const rafalBox = document.querySelector('.rafal')
 const moreRafal = document.querySelector('.moreTextRafal')
 
+function showMore(place, box, more) {
+    box.style.maxHeight = 'fit-content';
+    more.style.visibility = 'visible';
+    place.textContent = '- show less'
+    box.style.boxShadow = "0 0 20px rgb(207, 185, 233)";
+}
+
+function showLess(place, box, more) {
+    box.style.maxHeight = '';
+    place.textContent = '+ show more'
+    more.style.visibility = 'hidden';
+    box.style.boxShadow = "";
+
+}
+
 kvb.addEventListener('click', () => {
 
     if (kvb.textContent === '+ show more') {
-    kvbBox.style.maxHeight = 'fit-content';
-    moreKVB.style.visibility = 'visible';
-    kvb.textContent = '- show less'
-    kvbBox.style.boxShadow = "0 0 20px rgb(207, 185, 233)";
-
-
+        showMore(kvb, kvbBox, moreKVB);
     }
-    else {
-        kvbBox.style.maxHeight = '';
-        kvb.textContent = '+ show more'
-        moreKVB.style.visibility = 'hidden';
-        kvbBox.style.boxShadow = "";
 
+    else {
+        showLess();
     };
 });
 
 kvbBox.addEventListener('click', () => {
 
     if (kvb.textContent === '+ show more') {
-    kvbBox.style.maxHeight = 'fit-content';
-    moreKVB.style.visibility = 'visible';
-    kvb.textContent = '- show less'
-    kvbBox.style.boxShadow = "0 0 20px rgb(207, 185, 233)";
-
-
+        showMore(kvb, kvbBox, moreKVB);
     }
     else {
-        kvbBox.style.maxHeight = '';
-        kvb.textContent = '+ show more'
-        moreKVB.style.visibility = 'hidden';
-        kvbBox.style.boxShadow = "";
-
+        showLess(kvb, kvbBox, moreKVB);
     };
 });
 
 rafal.addEventListener('click', () => {
 
     if (rafal.textContent === '+ show more') {
-    rafalBox.style.maxHeight = 'fit-content';
-    moreRafal.style.visibility = 'visible';
-    rafal.textContent = '- show less'
-    rafalBox.style.boxShadow = '0 0 20px rgb(255, 148, 112)';
-
+        showMore(rafal, rafalBox, moreRafal)
     }
     else {
-        rafalBox.style.maxHeight = '';
-        rafal.textContent = '+ show more'
-        moreRafal.style.visibility = 'hidden';
-        rafalBox.style.boxShadow = "";
-
+        showLess(rafal, rafalBox, moreRafal)
     };
 });
 
 rafalBox.addEventListener('click', () => {
 
     if (rafal.textContent === '+ show more') {
-    rafalBox.style.maxHeight = 'fit-content';
-    moreRafal.style.visibility = 'visible';
-    rafal.textContent = '- show less'
-    rafalBox.style.boxShadow = '0 0 20px rgb(255, 148, 112)';
-
+        showMore(rafal, rafalBox, moreRafal)
     }
     else {
-        rafalBox.style.maxHeight = '';
-        rafal.textContent = '+ show more'
-        moreRafal.style.visibility = 'hidden';
-        rafalBox.style.boxShadow = "";
-
+        showLess(rafal, rafalBox, moreRafal)
     };
 });
