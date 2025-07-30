@@ -271,6 +271,14 @@ h2 {
     font-size: medium;
 }
 
+.kvb:hover {
+    box-shadow: 0;
+}
+
+.rafal:hover {
+    box-shadow: 0;
+}
+
 
 }
 
