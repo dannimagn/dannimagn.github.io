@@ -21,13 +21,13 @@ function showLess(place, box, more) {
 
 kvb.addEventListener('click', () => {
 
-    if (kvb.textContent === '+ show more'|| "+ mehr anzeigen" ) {
+    if (kvb.textContent === '+ show more') {
         showMore(kvb, kvbBox, moreKVB);
         kvbBox.style.boxShadow = "0 0 20px rgb(207, 185, 233)";
     }
 
     else {
-        showLess();
+        showLess(kvb, kvbBox, moreKVB);
         kvbBox.style.boxShadow = "";
 
     };
@@ -55,6 +55,8 @@ rafal.addEventListener('click', () => {
     }
     else {
         showLess(rafal, rafalBox, moreRafal)
+        rafalBox.style.boxShadow = "";
+
     };
 });
 
