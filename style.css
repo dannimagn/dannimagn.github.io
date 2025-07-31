@@ -272,11 +272,11 @@ h2 {
 }
 
 .kvb:hover {
-    box-shadow: 0;
+    box-shadow: 0 0 0px;
 }
 
 .rafal:hover {
-    box-shadow: 0;
+    box-shadow: 0 0 0px;
 }
 
 

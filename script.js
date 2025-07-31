@@ -28,6 +28,8 @@ kvb.addEventListener('click', () => {
 
     else {
         showLess();
+        kvbBox.style.boxShadow = "";
+
     };
 });
 
@@ -40,6 +42,8 @@ kvbBox.addEventListener('click', () => {
     }
     else {
         showLess(kvb, kvbBox, moreKVB);
+        kvbBox.style.boxShadow = "";
+
     };
 });
 
@@ -63,5 +67,7 @@ rafalBox.addEventListener('click', () => {
     }
     else {
         showLess(rafal, rafalBox, moreRafal)
+        rafalBox.style.boxShadow = "";
+
     };
 });
