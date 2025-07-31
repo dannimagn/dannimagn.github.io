@@ -154,13 +154,13 @@ a:hover,
 
 }
 
-.kvb:hover {
+/* .kvb:hover {
     box-shadow: 0 0 20px rgb(207, 185, 233);
 }
 
 .rafal:hover {
     box-shadow: 0 0 20px rgb(255, 148, 112);
-}
+} */
 
 .opened {
     max-width: fit-content;
