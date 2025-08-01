@@ -37,6 +37,10 @@ a {
     color: #7dc4e4;
 }
 
+.lang {
+    color: #eed49f;
+}
+
 .banner {
     display: flex;
     flex-direction: row;
