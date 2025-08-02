@@ -41,6 +41,38 @@ a {
     color: #eed49f;
 }
 
+.projects {
+    color: #a6da95;
+}
+
+.materialCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border: 2px solid #a6da95;
+    border-radius: 1rem;
+    gap: 1rem;
+    max-width: 30rem;
+    max-height: 20rem;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+}
+
+.materialList {
+    background-color:#24273a;
+    color: wheat;
+    border: 1px solid #a6da95;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.materialList:active {
+    background-color: #6e738d;
+}
+
 .banner {
     display: flex;
     flex-direction: row;
@@ -147,16 +179,20 @@ a:hover,
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 2rem;
     border: 2px solid #c7a0f6;
     border-radius: 1rem;
     gap: 1rem;
     max-width: 30rem;
-    max-height: 20rem;
+    max-height: 27rem;
     flex-wrap: wrap;
     overflow: hidden;
+    line-height: 2;
 
 }
+
+
+
 
 /* .kvb:hover {
     box-shadow: 0 0 20px rgb(207, 185, 233);
@@ -215,7 +251,7 @@ h2 {
 
 /* Here are the values for mobile. Keep them always below here*/
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 900px){
 
 .banner, .nav {
     justify-content: center;
@@ -256,11 +292,11 @@ h2 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 1rem;
     gap: 1rem;
     max-width: 25rem;
-    max-height: 21rem;
+    max-height: 30rem;
     flex-wrap: wrap;
     overflow: hidden;
 }
@@ -268,6 +304,10 @@ h2 {
 .emailFormText {
     height: 200px;
     width: 20rem;
+}
+
+h2 {
+    font-size: 14px;
 }
 
 .content {

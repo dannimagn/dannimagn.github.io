@@ -19,6 +19,10 @@ function showLess(place, box, more) {
 
 }
 
+function openWindow() {
+    window.open('./Material_List.html')
+}
+
 kvb.addEventListener('click', () => {
 
     if (kvb.textContent === '+ show more') {
