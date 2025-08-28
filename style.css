@@ -1,5 +1,15 @@
 /* Responsive css here */
 
+:root {
+  --orange: #f5a97f;
+  --sapphire: #7dc4e4;
+  --base: #24273a;
+  --crust: #11111b;
+  --text: #cdd6f4;
+
+
+}
+
 * {
     box-sizing: border-box;
     font-family: monospace;
@@ -13,7 +23,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #24273a;
+    background-color: var(--crust);
 }
 
 
@@ -58,6 +68,7 @@ a {
     max-height: 20rem;
     flex-wrap: wrap;
     overflow: hidden;
+    background-color: var(--base)
 
 }
 
@@ -84,7 +95,6 @@ a {
     font-weight: 700;
     padding: 2rem;
     padding-top: 4rem;
-    background-color: #1e2030;
     padding-left: 5%;
 }
 
@@ -140,7 +150,6 @@ a:hover,
     /* padding-left: 5%; */
     padding-top: 45px;
     padding-bottom: 45px;
-    background-color: #1e2030;
 }
 
 
@@ -188,6 +197,7 @@ a:hover,
     flex-wrap: wrap;
     overflow: hidden;
     line-height: 2;
+    background-color: var(--base)
 
 }
 
