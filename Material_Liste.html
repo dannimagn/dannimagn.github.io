@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title></title>
+        <style>
+
+        @page {
+            margin: 0;
+        }
+
+        * {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            box-sizing: border-box;
+            margin-top: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0px;
+            padding: 0px;
+            margin-bottom: 20px;
+        }
+
+        .arbeitsmittelContainer {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .arbeitsmittelContainer2 {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+        }
+
+        select {
+            width: 280px;
+            height: 30px;
+            border: 1px solid black;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            text-align: center;
+            font-weight: 550;
+        }
+
+        #container2 {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .abteilung {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .buro {
+            display: flex;
+            align-items: center;
+            gap: 63px;
+            margin-bottom: 30px;
+        }
+
+        .Nachmessung {
+            display: flex;
+            font-weight: 550;
+            gap: 10px
+        }
+
+        #seperatecontainer {
+            display: flex;
+            gap: 20px;
+            width: 100%;
+        }
+
+        #abteilung_input {
+            width: 320px;
+            height: 30px;
+            border: 1px solid black;
+            font-weight: 550;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            text-align: center;
+        }
+
+        #buroinput {
+            width: 300px;
+            height: 30px;
+            border: 1px solid black;
+            font-weight: 550;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            text-align: center;
+        }
+
+        #buroinput_main {
+            width: 320px;
+            height: 30px;
+            border: 1px solid black;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            text-align: center;
+            font-weight: 550;
+        }
+        .header {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0px;
+        }
+
+        h1 {
+            margin: 10px
+        }
+        h3 {
+            margin: 10px;
+        }
+
+        #buttonContainer {
+            marign-top: 10px;
+        }
+
+        button {
+            font-weight: 550;
+            width: 150px;
+            height: 50px;
+        }
+
+	.thing {
+	    width:300px;
+	    height:30px;
+	    border: 1px solid black;
+	    text-align: center;
+	    font-weight: 550;
+	}
+
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+</style>
+    </head>
+    <body id="body">
+
+        <div class="header">
+            <h1>DGUV Prüfung</h1>
+            <h3>Entnommenes Material</h3>
+                        <div class="Nachmessung">
+            <em>Nachmessung</em>            
+                <input type="checkbox" name="Nachmessung" class="myCheckbox">
+            </div>
+        </div>
+        <div class="selections">
+            <div class="abteilung">
+                <h3>Abteilung:</h3>
+                <input type="text" list="organigram" id="abteilung_input"/>
+		  <datalist id="organigram">
+                    <option style="display:none"></option>
+                    <option value="101 Pressesprecher">101 Pressesprecher</option>
+                    <option value="102 Vorstandsbüro">102 Vorstandsbüro</option>
+                    <option value="103 Betriebs- und Verkehrsleiter">103 Betriebs- und Verkehrsleiter</option>
+                    <option value="1031 Fahrtechnik"></option>
+                    <option value="1032 Betriebsleiterbüro"></option>
+                    <option value="104 Unternehmensstrategie">104 Unternehmensstrategie</option>
+                    <option value="1041 Innovation/Digitalisierung"></option>
+                    <option value="1042 Politik & Strategie"></option>
+                    <option value="105 Fördermittel">105 Fördermittel</option>
+                    <option value="1051 Innovationsförderung"></option>
+                    <option value="1052 Förderung Neu-">Förderung Neu- und Ausbauvorhaben</option>
+                    <option value="1053 Förderung Erneuerungsmaßnahmen"></option>
+                    <option value="11 Betrieb Stadtbahn &amp; Bus">11 Betrieb Stadtbahn &amp; Bus</option>
+                    <option value="12 Werkstätten Stadtbahn &amp; Bus">12 Werkstätten Stadtbahn &amp; Bus</option>
+                    <option value="13 Absatz">13 Absatz</option>
+                    <option value="15 Nahverkehrsmanagement">15 Nahverkehrsmanagement</option>
+                    <option value="17 Unternehmenskommunikation"></option>
+                    <option value="23 Finanz">23 Finanz und Rechnungswesen</option>
+                    <option value="24 Controlling"></option>
+                    <option value="201 Brandschutz/Umweltschutz">201 Zentraler Brandschutz/Umweltschutz</option>
+                    <option value="25 Werkstätten Bahn und Bus">25 Werkstätten Bahn und Bus</option>
+                    <option value="26 Projektbau und Gebäudemanagement">26 Projektbau und Gebäudemanagement</option>
+                    <option value="27 Fahrweg">27 Fahrweg</option>
+                    <option value="302 Arbeitssicherheit">302 Arbeitssicherheit</option>
+                    <option value="303 Informationssicherheit">303 Informationssicherheit</option>
+                    <option value="304 Compliance">304 Compliance</option>
+                    <option value="305 Datenschutz"></option>
+                    <option value="33 Materialwirtschaft"></option>
+                    <option value="34 Inhouse Consulting"></option>
+                    <option value="35 Fahrgastsicherheit und Werkschutz"></option>
+                    <option value="36 Facility Services"></option>
+                    <option value="38 Informationsmanagement"></option>
+                    <option value="37 Personalmanagement">37 Personalmanagement</option>
+		  </datalist>
+
+               <!-- <select name="abteilungselect" id="dguv">
+                    <option style="display:none"></option>
+                    <option value="101 Unternehmenskommunikation">101 Unternehmenskommunikation</option>
+                    <option value="102 Vorstandsbüro">102 Vorstandsbüro</option>
+                    <option value="103 Betriebs-&amp; Verkehrsleiter">103 Betriebs-&amp; Verkehrsleiter</option>
+                    <option value="11 Betrieb Stadtbahn &amp; Bus">11 Betrieb Stadtbahn &amp; Bus</option>
+                    <option value="12 Werkstätten Stadtbahn &amp; Bus">12 Werkstätten Stadtbahn &amp; Bus</option>
+                    <option value="15 Nahverkehrsmanagement">15 Nahverkehrsmanagement</option>
+                    <option value="31 Finanz &amp; Rechnungswesen">31 Finanz &amp; Rechnungswesen</option>
+                    <option value="32 Controlling">32 Controlling</option>
+                    <option value="201 Zentraler Brandschutz / Umweltschutz">201 Zentraler Brandschutz / Umweltschutz</option>
+                    <option value="202 Nord-Süd-Stadtbahn &amp; technisches Projektmanagement">202 Nord-Süd-Stadtbahn &amp; technisches Projektmanagement</option>
+                    <option value="203 Städtebauliche ÖPNV-Anforderungen">203 Städtebauliche ÖPNV-Anforderungen</option>
+                    <option value="301 Fördermittel">301 Fördermittel</option>
+                    <option value="26 Projektbau &amp; Gebäudemanagement">26 Projektbau &amp; Gebäudemanagement</option>
+                    <option value="27 Fahrweg">27 Fahrweg</option>
+                    <option value="33 Materialwirtschaft">33 Materialwirtschaft</option>
+                    <option value="401 Datenschutz">401 Datenschutz</option>
+                    <option value="402 Arbeitssicherheit">402 Arbeitssicherheit</option>
+                    <option value="404 Compliance">404 Compliance</option>
+                </select>
+                -->
+            </div>
+
+            <div class="buro">
+                <h3>Büro:</h3>
+
+                <input name="buroinput" id="buroinput_main">
+
+                </input>
+
+            </div>
+
+
+        </div>    
+
+        <div id="container">
+            <div class="arbeitsmittelContainer">
+                <div class="headContainer">
+                <h3>Material:</h3>
+                </div>
+
+                <input type="text" list="thing" class="thing"/>
+		  <datalist id="thing">
+                    <option style="display:none"></option>
+                    <option value="KGS - 1402080 ">Kaltgerätestecker</option>
+                    <option value="Kleeblattstecker - 1402079 ">Kleeblattstecker/Micki Maus 1,8m</option>
+                    <option value="SK 2 Stecker - 1402081">2 Pin Stecker</option>
+                    <option value="Kabelbinder - 1402051 ">Kabelbinder</option>
+                    <option value="Kabelkette">Kabelkette</option>
+                    <option value="6 fach Steckdosenleiste Plastic">6 fach Steckdosenleiste Plastic</option>
+                    <option value="6FSL Metal - 1840084">6 fach Steckdosenleiste Metal</option>                    		    
+		    <option value="9FSL Metal - 1840071">9 fach Steckdosenleiste</option>
+                    <option value="3FSL Metal - 1840082">3 fach Steckdosenleiste Metal</option>
+                    <option value="3 fach Steckdosenleiste Plastic">3 fach Steckdosenleiste Plastic</option>
+                    <option value="Verlängerung - 1402078">Verlängerung (5m)</option>
+                    <option value="Prüfplaketten - 1402062 ">Prüfplaketten</option>
+                    <option value="Kabelkanalflur">Kabelkanal/Flur</option>
+                    <option value="Fliesen">Fliesen</option>
+
+		  </datalist>
+                <input type="text" list="thing" class="thing"/>
+		  <datalist id="thing">
+                    <option style="display:none"></option>
+                    <option value="KGS - 1402080 ">Kaltgerätestecker</option>
+                    <option value="Kleeblattstecker - 1402079 ">Kleeblattstecker/Micki Maus 1,8m</option>
+                    <option value="SK 2 Stecker - 1402081">2 Pin Stecker</option>
+                    <option value="Kabelbinder - 1402051 ">Kabelbinder</option>
+                    <option value="Kabelkette">Kabelkette</option>
+                    <option value="6 fach Steckdosenleiste Plastic">6 fach Steckdosenleiste Plastic</option>
+                    <option value="6FSL Metal - 1840084">6 fach Steckdosenleiste Metal</option>                    		    
+		    <option value="9FSL Metal - 1840071">9 fach Steckdosenleiste</option>
+                    <option value="3FSL Metal - 1840082">3 fach Steckdosenleiste Metal</option>
+                    <option value="3 fach Steckdosenleiste Plastic">3 fach Steckdosenleiste Plastic</option>
+                    <option value="Verlängerung - 1402078">Verlängerung (5m)</option>
+                    <option value="Prüfplaketten - 1402062 ">Prüfplaketten</option>
+                    <option value="Kabelkanalflur">Kabelkanal/Flur</option>
+                    <option value="Fliesen">Fliesen</option>
+		  </datalist>
+                <input type="text" list="thing" class="thing"/>
+		  <datalist id="thing">
+                    <option style="display:none"></option>
+                    <option value="KGS - 1402080 ">Kaltgerätestecker</option>
+                    <option value="Kleeblattstecker - 1402079 ">Kleeblattstecker/Micki Maus 1,8m</option>
+                    <option value="SK 2 Stecker - 1402081">2 Pin Stecker</option>
+                    <option value="Kabelbinder - 1402051 ">Kabelbinder</option>
+                    <option value="Kabelkette">Kabelkette</option>
+                    <option value="6 fach Steckdosenleiste Plastic">6 fach Steckdosenleiste Plastic</option>
+                    <option value="6FSL Metal - 1840084">6 fach Steckdosenleiste Metal</option>                    		    
+		    <option value="9FSL Metal - 1840071">9 fach Steckdosenleiste</option>
+                    <option value="3FSL Metal - 1840082">3 fach Steckdosenleiste Metal</option>
+                    <option value="3 fach Steckdosenleiste Plastic">3 fach Steckdosenleiste Plastic</option>
+                    <option value="Verlängerung - 1402078">Verlängerung (5m)</option>
+                    <option value="Prüfplaketten - 1402062 ">Prüfplaketten</option>
+                    <option value="Kabelkanalflur">Kabelkanal/Flur</option>
+                    <option value="Fliesen">Fliesen</option>
+		  </datalist>
+                <input type="text" list="thing" class="thing"/>
+		  <datalist id="thing">
+                    <option style="display:none"></option>
+                    <option value="KGS - 1402080 ">Kaltgerätestecker</option>
+                    <option value="Kleeblattstecker - 1402079 ">Kleeblattstecker/Micki Maus 1,8m</option>
+                    <option value="SK 2 Stecker - 1402081">2 Pin Stecker</option>
+                    <option value="Kabelbinder - 1402051 ">Kabelbinder</option>
+                    <option value="Kabelkette">Kabelkette</option>
+                    <option value="6 fach Steckdosenleiste Plastic">6 fach Steckdosenleiste Plastic</option>
+                    <option value="6FSL Metal - 1840084">6 fach Steckdosenleiste Metal</option>                    		    
+		    <option value="9FSL Metal - 1840071">9 fach Steckdosenleiste</option>
+                    <option value="3FSL Metal - 1840082">3 fach Steckdosenleiste Metal</option>
+                    <option value="3 fach Steckdosenleiste Plastic">3 fach Steckdosenleiste Plastic</option>
+                    <option value="Verlängerung - 1402078">Verlängerung (5m)</option>
+                    <option value="Prüfplaketten - 1402062 ">Prüfplaketten</option>
+                    <option value="Kabelkanalflur">Kabelkanal/Flur</option>
+                    <option value="Fliesen">Fliesen</option>
+		  </datalist>
+                <input type="text" list="thing" class="thing"/>
+		  <datalist id="thing">
+                    <option style="display:none"></option>
+                    <option value="KGS - 1402080 ">Kaltgerätestecker</option>
+                    <option value="Kleeblattstecker - 1402079 ">Kleeblattstecker/Micki Maus 1,8m</option>
+                    <option value="SK 2 Stecker - 1402081">2 Pin Stecker</option>
+                    <option value="Kabelbinder - 1402051 ">Kabelbinder</option>
+                    <option value="Kabelkette">Kabelkette</option>
+                    <option value="6 fach Steckdosenleiste Plastic">6 fach Steckdosenleiste Plastic</option>
+                    <option value="6FSL Metal - 1840084">6 fach Steckdosenleiste Metal</option>                    		    
+		    <option value="9FSL Metal - 1840071">9 fach Steckdosenleiste</option>
+                    <option value="3FSL Metal - 1840082">3 fach Steckdosenleiste Metal</option>
+                    <option value="3 fach Steckdosenleiste Plastic">3 fach Steckdosenleiste Plastic</option>
+                    <option value="Verlängerung - 1402078">Verlängerung (5m)</option>
+                    <option value="Prüfplaketten - 1402062 ">Prüfplaketten</option>
+                    <option value="Kabelkanalflur">Kabelkanal/Flur</option>
+                    <option value="Fliesen">Fliesen</option>
+		  </datalist>
+                <input type="text" list="thing" class="thing"/>
+		  <datalist id="thing">
+                    <option style="display:none"></option>
+                    <option value="KGS - 1402080 ">Kaltgerätestecker</option>
+                    <option value="Kleeblattstecker - 1402079 ">Kleeblattstecker/Micki Maus 1,8m</option>
+                    <option value="SK 2 Stecker - 1402081">2 Pin Stecker</option>
+                    <option value="Kabelbinder - 1402051 ">Kabelbinder</option>
+                    <option value="Kabelkette">Kabelkette</option>
+                    <option value="6 fach Steckdosenleiste Plastic">6 fach Steckdosenleiste Plastic</option>
+                    <option value="6FSL Metal - 1840084">6 fach Steckdosenleiste Metal</option>                    		    
+		    <option value="9FSL Metal - 1840071">9 fach Steckdosenleiste</option>
+                    <option value="3FSL Metal - 1840082">3 fach Steckdosenleiste Metal</option>
+                    <option value="3 fach Steckdosenleiste Plastic">3 fach Steckdosenleiste Plastic</option>
+                    <option value="Verlängerung - 1402078">Verlängerung (5m)</option>
+                    <option value="Prüfplaketten - 1402062 ">Prüfplaketten</option>
+                    <option value="Kabelkanalflur">Kabelkanal/Flur</option>
+                    <option value="Fliesen">Fliesen</option>
+		  </datalist>
+                <input type="text" list="thing" class="thing"/>
+		  <datalist id="thing">
+                    <option style="display:none"></option>
+                    <option value="KGS - 1402080 ">Kaltgerätestecker</option>
+                    <option value="Kleeblattstecker - 1402079 ">Kleeblattstecker/Micki Maus 1,8m</option>
+                    <option value="SK 2 Stecker - 1402081">2 Pin Stecker</option>
+                    <option value="Kabelbinder - 1402051 ">Kabelbinder</option>
+                    <option value="Kabelkette">Kabelkette</option>
+                    <option value="6 fach Steckdosenleiste Plastic">6 fach Steckdosenleiste Plastic</option>
+                    <option value="6FSL Metal - 1840084">6 fach Steckdosenleiste Metal</option>                    		    
+		    <option value="9FSL Metal - 1840071">9 fach Steckdosenleiste</option>
+                    <option value="3FSL Metal - 1840082">3 fach Steckdosenleiste Metal</option>
+                    <option value="3 fach Steckdosenleiste Plastic">3 fach Steckdosenleiste Plastic</option>
+                    <option value="Verlängerung - 1402078">Verlängerung (5m)</option>
+                    <option value="Prüfplaketten - 1402062 ">Prüfplaketten</option>
+                    <option value="Kabelkanalflur">Kabelkanal/Flur</option>
+                    <option value="Fliesen">Fliesen</option>
+		  </datalist>
+                <input type="text" list="thing" class="thing"/>
+		  <datalist id="thing">
+                    <option style="display:none"></option>
+                    <option value="KGS - 1402080 ">Kaltgerätestecker</option>
+                    <option value="Kleeblattstecker - 1402079 ">Kleeblattstecker/Micki Maus 1,8m</option>
+                    <option value="SK 2 Stecker - 1402081">2 Pin Stecker</option>
+                    <option value="Kabelbinder - 1402051 ">Kabelbinder</option>
+                    <option value="Kabelkette">Kabelkette</option>
+                    <option value="6 fach Steckdosenleiste Plastic">6 fach Steckdosenleiste Plastic</option>
+                    <option value="6FSL Metal - 1840084">6 fach Steckdosenleiste Metal</option>                    		    
+		    <option value="9FSL Metal - 1840071">9 fach Steckdosenleiste</option>
+                    <option value="3FSL Metal - 1840082">3 fach Steckdosenleiste Metal</option>
+                    <option value="3 fach Steckdosenleiste Plastic">3 fach Steckdosenleiste Plastic</option>
+                    <option value="Verlängerung - 1402078">Verlängerung (5m)</option>
+                    <option value="Prüfplaketten - 1402062 ">Prüfplaketten</option>
+                    <option value="Kabelkanalflur">Kabelkanal/Flur</option>
+                    <option value="Fliesen">Fliesen</option>
+		  </datalist>
+                <input type="text" list="thing" class="thing"/>
+		  <datalist id="thing">
+                    <option style="display:none"></option>
+                    <option value="KGS - 1402080 ">Kaltgerätestecker</option>
+                    <option value="Kleeblattstecker - 1402079 ">Kleeblattstecker/Micki Maus 1,8m</option>
+                    <option value="SK 2 Stecker - 1402081">2 Pin Stecker</option>
+                    <option value="Kabelbinder - 1402051 ">Kabelbinder</option>
+                    <option value="Kabelkette">Kabelkette</option>
+                    <option value="6 fach Steckdosenleiste Plastic">6 fach Steckdosenleiste Plastic</option>
+                    <option value="6FSL Metal - 1840084">6 fach Steckdosenleiste Metal</option>                    		    
+		    <option value="9FSL Metal - 1840071">9 fach Steckdosenleiste</option>
+                    <option value="3FSL Metal - 1840082">3 fach Steckdosenleiste Metal</option>
+                    <option value="3 fach Steckdosenleiste Plastic">3 fach Steckdosenleiste Plastic</option>
+                    <option value="Verlängerung - 1402078">Verlängerung (5m)</option>
+                    <option value="Prüfplaketten - 1402062 ">Prüfplaketten</option>
+                    <option value="Kabelkanalflur">Kabelkanal/Flur</option>
+                    <option value="Fliesen">Fliesen</option>
+		  </datalist>
+                <input type="text" list="thing" class="thing"/>
+		  <datalist id="thing">
+                    <option style="display:none"></option>
+                    <option value="KGS - 1402080 ">Kaltgerätestecker</option>
+                    <option value="Kleeblattstecker - 1402079 ">Kleeblattstecker/Micki Maus 1,8m</option>
+                    <option value="SK 2 Stecker - 1402081">2 Pin Stecker</option>
+                    <option value="Kabelbinder - 1402051 ">Kabelbinder</option>
+                    <option value="Kabelkette">Kabelkette</option>
+                    <option value="6 fach Steckdosenleiste Plastic">6 fach Steckdosenleiste Plastic</option>
+                    <option value="6FSL Metal - 1840084">6 fach Steckdosenleiste Metal</option>                    		    
+		    <option value="9FSL Metal - 1840071">9 fach Steckdosenleiste</option>
+                    <option value="3FSL Metal - 1840082">3 fach Steckdosenleiste Metal</option>
+                    <option value="3 fach Steckdosenleiste Plastic">3 fach Steckdosenleiste Plastic</option>
+                    <option value="Verlängerung - 1402078">Verlängerung (5m)</option>
+                    <option value="Prüfplaketten - 1402062 ">Prüfplaketten</option>
+                    <option value="Kabelkanalflur">Kabelkanal/Flur</option>
+                    <option value="Fliesen">Fliesen</option>
+		  </datalist>
+                <!--
+                <select name="material" id="material">
+                    <option style="display:none"></option>
+                    <option value="Kaltgerätestecker">Kaltgerätestecker</option>
+                    <option value="Kleeblattstecker/Micki Maus">Kleeblattstecker/Micki Maus</option>
+                    <option value="2 Pin Stecker">2 Pin Stecker</option>
+                    <option value="Kabelbinder">Kabelbinder</option>
+                    <option value="Kabelkette">Kabelkette</option>
+                    <option value="6 fach Steckdosenleiste">6 fach Steckdosenleiste Plastic</option>
+                    <option value="9 fach Steckdosenleiste">9 fach Steckdosenleiste Metal</option>
+                    <option value="3 fach Steckdosenleiste">3 fach Steckdosenleiste</option>
+                    <option value="3 fach Steckdosenleiste (PVC/Weiß)">3 fach Steckdosenleiste (PVC/Weiß)</option>
+                    <option value="Verlängerung (5m)">Verlängerung (5m)</option>
+                    <option value="Prüfplaketten">Prüfplaketten</option>
+                </select>
+            -->
+            </div>
+
+
+            <div class="arbeitsmittelContainer2">
+                <div class="headContainer">
+                <h3>Anzahl:</h3>
+                </div>
+                <input name="Arbeitsmittel" id="buroinput">
+                <input name="Arbeitsmittel" id="buroinput">
+                <input name="Arbeitsmittel" id="buroinput">
+                <input name="Arbeitsmittel" id="buroinput">
+                <input name="Arbeitsmittel" id="buroinput">
+                <input name="Arbeitsmittel" id="buroinput">
+                <input name="Arbeitsmittel" id="buroinput">
+                <input name="Arbeitsmittel" id="buroinput">
+                <input name="Arbeitsmittel" id="buroinput">
+                <input name="Arbeitsmittel" id="buroinput">
+
+
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+        <div id="buttonContainer"></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script>
+            const container = document.getElementById('buttonContainer');
+            const btn = document.createElement('button');
+            const buro = document.getElementById('buroinput_main')
+            const abteilung = document.querySelector('.abteilung_input')
+            const input = document.querySelectorAll('input')
+            const title = document.getElementById('title')
+            const checkbox = document.querySelector('.myCheckbox')
+
+            function hideButtons() {
+                container.removeChild(btn)
+            }
+
+            function showButtons() {
+                container.appendChild(btn);
+            }
+
+            container.appendChild(btn);
+            btn.textContent = 'Speichern';
+            btn.addEventListener('click', () => {
+                if (checkbox.checked) {
+                document.title = `${abteilung_input.value.replaceAll(" ","_")}_büro_${buroinput_main.value.replaceAll(" ", "_")}_Nachmessung`
+                hideButtons();
+		        alert(`Bitte wählen Sie "Als PDF Speichern", um den richtigen Dateinamen zu erhalten.`)
+                print();
+                showButtons();
+                } else {
+                                    document.title = `${abteilung_input.value.replaceAll(" ","_")}_büro_${buroinput_main.value.replaceAll(" ", "_")}`
+                hideButtons();
+		        alert(`Bitte wählen Sie "Als PDF Speichern", um den richtigen Dateinamen zu erhalten.`)
+                print();
+                showButtons();
+                }
+
+                
+                /* const element = document.documentElement;
+                var options = {
+                  filename:     `${abteilung_input.value.replaceAll(" ","")}_buro_${buroinput_main.value}`,
+                      jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' },
+                      margin: [-4,0,0,0],
+                      html2canvas: { scale: 2},
+                      pagebreak: { mode: 'avoid-all' },
+                };
+                html2pdf(element, options); */
+            });
+        </script>
+
+
+    </body>
+</html>

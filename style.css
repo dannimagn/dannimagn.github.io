@@ -37,6 +37,9 @@ a {
     color: #7dc4e4;
 }
 
+.material {
+    color: #ee99a0;
+}
 .banner {
     display: flex;
     flex-direction: row;
