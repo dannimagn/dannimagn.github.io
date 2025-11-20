@@ -1,5 +1,15 @@
 /* Responsive css here */
 
+:root {
+  --orange: #f5a97f;
+  --sapphire: #7dc4e4;
+  --base: #24273a;
+  --crust: #11111b;
+  --text: #cdd6f4;
+
+
+}
+
 * {
     box-sizing: border-box;
     font-family: monospace;
@@ -13,7 +23,7 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #24273a;
+    background-color: var(--crust);
 }
 
 
@@ -37,9 +47,49 @@ a {
     color: #7dc4e4;
 }
 
+<<<<<<< HEAD
 .material {
     color: #ee99a0;
 }
+=======
+.lang {
+    color: #eed49f;
+}
+
+.projects {
+    color: #a6da95;
+}
+
+.materialCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border: 2px solid #a6da95;
+    border-radius: 1rem;
+    gap: 1rem;
+    max-width: 30rem;
+    max-height: 20rem;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background-color: var(--base)
+
+}
+
+.materialList {
+    background-color:#24273a;
+    color: wheat;
+    border: 1px solid #a6da95;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.materialList:active {
+    background-color: #6e738d;
+}
+
+>>>>>>> b1eba97ce9adef308ed81557ea07e510f43efd03
 .banner {
     display: flex;
     flex-direction: row;
@@ -51,7 +101,6 @@ a {
     font-weight: 700;
     padding: 2rem;
     padding-top: 4rem;
-    background-color: #1e2030;
     padding-left: 5%;
 }
 
@@ -107,7 +156,6 @@ a:hover,
     /* padding-left: 5%; */
     padding-top: 45px;
     padding-bottom: 45px;
-    background-color: #1e2030;
 }
 
 
@@ -146,24 +194,29 @@ a:hover,
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 2rem;
     border: 2px solid #c7a0f6;
     border-radius: 1rem;
     gap: 1rem;
     max-width: 30rem;
-    max-height: 20rem;
+    max-height: 27rem;
     flex-wrap: wrap;
     overflow: hidden;
+    line-height: 2;
+    background-color: var(--base)
 
 }
 
-.kvb:hover {
+
+
+
+/* .kvb:hover {
     box-shadow: 0 0 20px rgb(207, 185, 233);
 }
 
 .rafal:hover {
     box-shadow: 0 0 20px rgb(255, 148, 112);
-}
+} */
 
 .opened {
     max-width: fit-content;
@@ -214,7 +267,7 @@ h2 {
 
 /* Here are the values for mobile. Keep them always below here*/
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 900px){
 
 .banner, .nav {
     justify-content: center;
@@ -255,11 +308,11 @@ h2 {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+    padding: 2rem;
     border-radius: 1rem;
     gap: 1rem;
     max-width: 25rem;
-    max-height: 21rem;
+    max-height: 30rem;
     flex-wrap: wrap;
     overflow: hidden;
 }
@@ -269,17 +322,21 @@ h2 {
     width: 20rem;
 }
 
+h2 {
+    font-size: 14px;
+}
+
 .content {
     padding: 10%;
     font-size: medium;
 }
 
 .kvb:hover {
-    box-shadow: 0;
+    box-shadow: 0 0 0px;
 }
 
 .rafal:hover {
-    box-shadow: 0;
+    box-shadow: 0 0 0px;
 }
 
 
