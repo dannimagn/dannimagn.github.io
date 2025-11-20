@@ -47,11 +47,10 @@ a {
     color: #7dc4e4;
 }
 
-<<<<<<< HEAD
 .material {
     color: #ee99a0;
 }
-=======
+
 .lang {
     color: #eed49f;
 }
@@ -89,7 +88,6 @@ a {
     background-color: #6e738d;
 }
 
->>>>>>> b1eba97ce9adef308ed81557ea07e510f43efd03
 .banner {
     display: flex;
     flex-direction: row;
